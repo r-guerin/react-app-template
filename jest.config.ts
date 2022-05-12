@@ -23,7 +23,7 @@ const config: Config.InitialOptions = {
   testRegex: '.(test|spec)\\.[jt]sx?$',
   testEnvironment: 'jsdom',
   transform: {
-    '\\.[jt]sx?$': '@swc/jest',
+    '^.+\\.[jt]sx?$': '@swc/jest',
   },
   resetMocks: true,
   rootDir: './src',
